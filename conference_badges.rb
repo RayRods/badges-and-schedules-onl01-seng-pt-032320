@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 
+=======
+require "pry"
+>>>>>>> 70a79e57fb8e6955b0b329ff3868507fa274052a
 def badge_maker(name)
    "Hello, my name is #{name}."
 end
 
 def batch_badge_creator(attendees)
+<<<<<<< HEAD
     attendees.map {|names| "Hello, my name is #{names}."}
 end
 
@@ -22,4 +27,17 @@ def printer(attendees)
    end
 end
 
+=======
+    attendees.map do |name| "Hello, my name is #{name}."
+    end
+end
+
+def assign_rooms(num)
+    num.each_with_index do |room_num| "Hello, #{name}! You'll be assigned to room #{room_num}!"
+  binding.pry
+  end
+end
+
+
+>>>>>>> 70a79e57fb8e6955b0b329ff3868507fa274052a
 # Write your code here.
